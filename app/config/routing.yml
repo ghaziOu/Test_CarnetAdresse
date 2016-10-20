@@ -1,0 +1,11 @@
+my_app_carnet:
+    resource: "@MyAppCarnetBundle/Resources/config/routing.yml"
+    prefix:   /
+
+my_app_user:
+    resource: "@MyAppUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# app/config/routing.yml
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

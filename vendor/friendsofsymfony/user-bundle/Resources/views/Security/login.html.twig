@@ -1,0 +1,41 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+
+
+    <div class="w3-container">
+  
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-green w3-large">Login</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
+      
+      </div>
+
+      <form class="w3-container" action="{{ path("fos_user_security_check") }}" method="post">
+        <div class="w3-section">
+            <label for="username">{{ 'security.login.username'|trans }}</label>
+          
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="_username" value="{{ last_username }}" required>
+          <label for="password">{{ 'security.login.password'|trans }}</label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="_password" required>
+          <button class="w3-btn-block w3-green w3-section w3-padding" type="submit" name="_submit" value="{{ 'security.login.submit'|trans }}">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked" name="_remember_me" value="on"> Remember me
+        </div>
+      </form>
+
+      
+
+    </div>
+  </div>
+</div>
+         
+{% endblock fos_user_content %}

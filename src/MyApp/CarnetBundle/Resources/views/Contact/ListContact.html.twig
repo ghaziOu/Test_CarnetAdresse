@@ -1,0 +1,37 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Liste des contacts{% endblock %}
+
+{% block body %}
+
+  
+        <div class="w3-container">
+            <center> <h2>Liste des contacts</h2></center>
+<i class="fa fa-plus" aria-hidden="true"></i><a href="{{path("_ajouter_contact")}}" role="button">Ajouter un contact</a>
+      
+  <ul class="w3-ul w3-card-4">
+        {% for C in Contact %}
+    <li class="w3-padding-16">
+      <span onclick="this.parentElement.style.display='none'"
+      class="w3-closebtn w3-padding w3-margin-right w3-medium"><i class="fa fa-minus-square" aria-hidden="true"></i>
+          <a href="{{path("_supprimer_contact",{'id':C.id})}}" role="button">Supprimer</a></span>
+      
+       <span onclick="this.parentElement.style.display='none'"
+      class="w3-closebtn w3-padding w3-margin-right w3-medium"><i class="fa fa-check-square" aria-hidden="true"></i>   <a href="{{path("_modifer_contact",{'id':C.id})}}" role="button">Modifier</a></span>
+ 
+     
+      <img src="{{asset('./img/person.png')}}" class="w3-left w3-circle w3-margin-right" style="width:60px">
+     <span class="w3-xlarge">{{C.nom}} {{C.prenom}}</span><br>
+       <i class="fa fa-building" aria-hidden="true"></i> <span>{{C.adresse}}</span>
+    <i class="fa fa-volume-control-phone" aria-hidden="true"></i><span>{{C.telephone}}</span> 
+     <span class="glyphicon glyphicon-envelope"/><span>{{C.email}}</span>
+     <i class="fa fa-globe" aria-hidden="true"></i><span >{{C.siteweb}}</span>
+    </li>
+   {% endfor %}
+   
+  </ul>
+</div>
+
+
+    {% endblock %}
+

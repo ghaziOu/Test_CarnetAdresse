@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp/www/fos/src/MyApp/UserBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register_content.html.twig</file>
+            <file>file:/C:/wamp/www/fos/app/config/routing.yml</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/CarnetBundle/Form/ContactType.php</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/CarnetBundle/Resources/views/Contact/ListContact.html.twig</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Form/DataTransformer/UserToUsernameTransformer.php</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/CarnetBundle/Resources/views/Contact/AjouterContact.html.twig</file>
+            <file>file:/C:/wamp/www/fos/app/config/security.yml</file>
+            <file>file:/C:/wamp/www/fos/app/Resources/views/base.html.twig</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/UserBundle/MyAppUserBundle.php</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Model/User.php</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/CarnetBundle/Resources/views/Contact/ModiferContact.html.twig</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/CarnetBundle/Controller/ContactController.php</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register.html.twig</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/UserBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Resources/config/routing/profile.xml</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/CarnetBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Form/Factory/FormFactory.php</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/UserBundle/Resources/views/PageAccueil/index.html.twig</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/CarnetBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/UserBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/UserBundle/Resources/config/services.yml</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/UserBundle/Controller/PageAccueilController.php</file>
+            <file>file:/C:/wamp/www/fos/src/MyApp/UserBundle/Entity/User.php</file>
+            <file>file:/C:/wamp/www/fos/vendor/friendsofsymfony/user-bundle/Resources/config/routing/all.xml</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,6 @@
+my_app_user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MyAppUserBundle:Default:index }
+pageaccueil:
+    path:     /accueil
+    defaults: { _controller: MyAppUserBundle:PageAccueil:index }

@@ -1,0 +1,19 @@
+my_app_carnet_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MyAppCarnetBundle:Default:index }
+
+_ajouter_contact:
+    path:     /AjouterContact
+    defaults: { _controller: MyAppCarnetBundle:Contact:AjouterContact }
+
+_list_contact:
+    path:     /ListContact
+    defaults: { _controller: MyAppCarnetBundle:Contact:ListContact }
+
+_supprimer_contact:
+    path:     /SupprimerContact/{id}
+    defaults: { _controller: MyAppCarnetBundle:Contact:SupprimerContact }
+
+_modifer_contact:
+    path:     /ModiferContact/{id}
+    defaults: { _controller: MyAppCarnetBundle:Contact:ModiferContact }

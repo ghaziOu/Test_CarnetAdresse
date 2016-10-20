@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+           <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}"/>
+         <link rel="stylesheet" href="{{asset('http://www.w3schools.com/lib/w3.css')}}">
+         <link rel="stylesheet" href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')}}"/>
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

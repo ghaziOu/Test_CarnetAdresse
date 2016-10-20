@@ -1,0 +1,65 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Modifier Contact{% endblock %}
+
+{% block body %}
+    <ul class="w3-navbar w3-green">
+    <li><a href="{{path("_list_contact")}}" role="button">Liste des contact</a></li>
+   
+  </ul>
+    <center><h1>Modifier Contact</h1></center>
+    <div class="well">
+        {{ form_start(Form, {'attr': {'class': 'form-horizontal'}}) }}
+        {{ form_errors(Form) }}
+        <div class="form-group">
+            {{ form_label(Form.nom, "Prenom", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+            {{ form_errors(Form.nom) }}
+            <div class="col-sm-4">
+                {{ form_widget(Form.nom, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+        <div class="form-group">
+            {{ form_label(Form.prenom, "Nom", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+            {{ form_errors(Form.prenom) }}
+            <div class="col-sm-4">
+                {{ form_widget(Form.prenom, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+        <div class="form-group">
+            {{ form_label(Form.email, "email", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+            {{ form_errors(Form.email) }}
+            <div class="col-sm-4">
+                {{ form_widget(Form.email, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+        <div class="form-group">
+            {{ form_label(Form.adresse, "Telephone", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+            {{ form_errors(Form.adresse) }}
+            <div class="col-sm-4">
+                {{ form_widget(Form.adresse, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+   <div class="form-group">
+            {{ form_label(Form.telephone, "Telephone", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+            {{ form_errors(Form.telephone) }}
+            <div class="col-sm-4">
+                {{ form_widget(Form.telephone, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+               <div class="form-group">
+            {{ form_label(Form.siteweb, "Telephone", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+            {{ form_errors(Form.siteweb) }}
+            <div class="col-sm-4">
+                {{ form_widget(Form.siteweb, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                {{ form_widget(Form.save, {'attr': {'class': 'btn btn-primary form-control'}}) }}
+            </div>
+        </div>
+        {{ form_end(Form) }}
+    </div>
+{% endblock %}
